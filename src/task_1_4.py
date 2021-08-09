@@ -1,5 +1,5 @@
-# Task №4
-k = (a + b)/2   #Среднее арифметическое
-g = (a + b)**(1/2)  #Среднее геометрическое
-
-print({g,k})
+a = float(input("Enter 1 number"))
+b = float(input("Enter 2 number"))
+c = (a + b) / 2
+d = (a * b) ** 0.5
+print("Arifm = ", c, "Geom = ", d)

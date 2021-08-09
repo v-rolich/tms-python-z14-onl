@@ -1,10 +1,5 @@
-# Task №5
-u = int(input('Введите значение "u_катет:"')) #Катет прямоугольного треугольника
-w = int(input('Введите значение "w_катет:"')) #Катет прямоугольного треугольника
-
-s_triangle = (u * w)/2
-t_hypotenuse = (u ** 2 + w ** 2) ** 1/2
-
-print([s_triangle,t_hypotenuse])
-
-
+a = float(input("Enter 1 side"))
+b = float(input("Enter 2 side"))
+c = ((a ** 2) + (b ** 2)) ** 0.5
+s = (a * b) / 2
+print("3 side =", c, "Square =", s)

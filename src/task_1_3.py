@@ -1,8 +1,4 @@
-# Task №3
-l = int(input('Введите значение "l_длина ребра куба:"'))
-v = l ** 3
-
-s = 4 * l ** 2
-
-print({v,s})
-
+a = float(input("Enter the side of cube"))
+v = a ** 3
+s = (a ** 2) * 6
+print("Cube volume =", v, "Lateral surface area", s)
