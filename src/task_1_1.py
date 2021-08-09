@@ -1,10 +1,10 @@
-a,b = int(input("Введите первое число:")), int(input("Введите второе число:"))
+a, b = int(input("Введите первое число:")), int(input("Введите второе число:"))
 c = str(input("Введите символ"))
 if c == "-":
-    print(a-b)
+    print(a - b)
 elif c == "+":
-    print(a+b)
+    print(a + b)
 elif c == "*":
-    print (a*b)
+    print(a * b)
 else:
-    print ("Данные введены некоректно")
+    print("Данные введены некоректно")
