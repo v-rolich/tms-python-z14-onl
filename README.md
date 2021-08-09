@@ -1,4 +1,4 @@
-# TMS-python-spring
+# TMS-python
 Курс Python разработчик
 
 ## Как добавить домашку?
