@@ -1,3 +1,7 @@
+"""
+Дана длина ребра куба. Найти объем куба и площадь его боковой
+поверхности.
+"""
 
 """
 The formula for calculating the volume of a cube
