@@ -23,5 +23,5 @@ Where 'square' is side surface area
 square = 4 * a ** 2
 print(square)
 
-square2 = 6 * a ** 2
-print(square2)
+square_2 = 6 * a ** 2
+print(square_2)

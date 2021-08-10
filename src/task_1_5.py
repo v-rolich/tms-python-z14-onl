@@ -8,8 +8,8 @@ Need to use the Pythagorean theorem
 """
 a = 3
 b = 4
-c = pow((a ** 2) + (b ** 2), 0.5)
-print(c)
+count = pow(a ** 2 + b ** 2, 0.5)
+print(count)
 
-square = (a * b) * 0.5
+square = a * b * 0.5
 print(square)

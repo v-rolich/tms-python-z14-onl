@@ -7,4 +7,4 @@
 first_name = input('Write your first name: ')
 last_name = input('Write your last name: ')
 age = input('How old are your? ')
-print('Hi my name is {} {} i am {} years old'.format(first_name, last_name, age))
+print(f'Hi my name is {first_name} {last_name} i am {age} years old')
