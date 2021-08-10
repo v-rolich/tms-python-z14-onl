@@ -9,5 +9,3 @@ print(a, '-', b, '=', a - b)
 print('------')
 
 print(a, '*', b, '=', a * b)
-
-
