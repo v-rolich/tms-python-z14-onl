@@ -1,8 +1,8 @@
 """
 Даны действительные числа x и y. Получить (|x| − |y|) /  (1 + |xy|)
 """
-x = abs(-10)
-y = abs(5)
-total = (x - y) / (1 + (x * y))
+x = -10
+y = 5
+total = (abs(x) - abs(y)) / (1 + abs(x * y))
 
 print(total)

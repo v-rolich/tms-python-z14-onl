@@ -7,17 +7,18 @@
 The formula for calculating the volume of a cube
 if you only know the length of the edge: V = a ⋅ a ⋅ a = a ** 3
 Where 'a' is length of the edge
-Where 'V' is volume of cube
+Where 'volume' is volume of cube
 """
 
 a = 5
-V = a ** 3
-print(V)
+volume = a ** 3
+print(volume)
 
 """
 The area of the side surface of the cube is equal to the number 
 of side faces multiplied by the square of the edge: S = 4 * a ** 2
+Where 'square' is side surface area
 """
 
-S = 4 * a ** 2
-print(S)
+square = 4 * a ** 2
+print(square)
