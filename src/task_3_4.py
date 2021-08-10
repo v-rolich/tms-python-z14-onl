@@ -15,5 +15,5 @@ b = a
 print(id(b))
 print(id(a))
 b.insert(0, 5)
-print(id(a))
-print(id(b))
+print(a)
+print(a)
