@@ -4,4 +4,4 @@
 firstname = input("Input your name: ")
 lastname = input("Input your surname: ")
 age = input("Input your age: ")
-print("Привет, меня зовут " + firstname + " " + lastname + " мне " + age + " лет")
+print(f"Привет, меня зовут {firstname} {lastname} мне {age} лет")

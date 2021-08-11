@@ -4,8 +4,10 @@
 # Создать словарь с одной парой. Ключ - список, значение - кортеж
 a = [4, "tt"]
 b = ("ik", 8)
-c = {b[0]: a[0]}
+c = {b: a}
 print(c)
-a, b = b, a
-c = {b[0]: a[0]}
+c = {a: b}
 print(c)
+# We will get an error in the second case
+# In python dictionary keys must be immutable types
+# and list is a mutable type
