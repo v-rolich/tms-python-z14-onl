@@ -8,7 +8,7 @@
 """
 
 a = [1, 2, 3, 4]
-b = [ ]
+b = []
 print(id(a))
 print(id(b))
 b = a
