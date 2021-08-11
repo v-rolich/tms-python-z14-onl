@@ -8,6 +8,7 @@ print(id(a))
 print(id(b))
 
 b.insert(0, 10)
+
 print(id(a))
 print(id(b))
 
