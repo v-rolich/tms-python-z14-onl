@@ -2,9 +2,9 @@
 Даны 2 действительных числа a и b. Получить их сумму, разность и
 произведение.
 """
-num_1 = 10
-num_2 = 15
+a = 10
+b = 15
 
-print(num_1 + num_2)
-print(num_1 - num_2)
-print(num_1 * num_2)
+print(a + b)
+print(a - b)
+print(a * b)
