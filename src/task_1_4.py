@@ -7,4 +7,5 @@ arif = (a + b)/2
 geom = math.sqrt(a + b)
 
 print(arif)
-print ("Ein folk.Ein Reich.Ein", geom)
+
+print("Ein folk.Ein Reich.Ein", geom)
