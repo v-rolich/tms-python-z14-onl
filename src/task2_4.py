@@ -1,3 +1,3 @@
 # Создать строку равную введенной строку без последних двух символов.
-a = "fourth string"
+a = input('Enter some string\n')
 print(a[:- 2])

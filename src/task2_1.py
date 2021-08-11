@@ -1,3 +1,3 @@
 # Создать строку равную третьему символу введенной строки.
-a = "first string"
+a = input('Enter some string\n')
 print(a[2])

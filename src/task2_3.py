@@ -1,3 +1,3 @@
 # Создать строку равную первым пяти символам введенной строки.
-a = "third string"
+a = input('Enter some string\n')
 print(a[:5])

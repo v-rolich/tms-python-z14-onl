@@ -5,4 +5,4 @@ a = 'some sentence'
 b = len(a)
 c = '!'
 if b % 3 == 0:
-    print(a+c)
+    print(a + c)
