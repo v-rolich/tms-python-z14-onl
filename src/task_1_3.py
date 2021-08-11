@@ -14,11 +14,6 @@ a = 5
 volume = a ** 3
 print(volume)
 
-"""
-The area of the side surface of the cube is equal to the number 
-of side faces multiplied by the square of the edge: S = 4 * a ** 2
-Where 'square' is side surface area
-"""
 square = 4 * a ** 2
 print(square)
 
