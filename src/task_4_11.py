@@ -4,7 +4,7 @@ gmail.com, вывести на экран имя почтового ящика. 
 “DOMAIN NAME is not supported’
 """
 
-domain = input('Enter domain: ')
+domain = input('Enter your domain: ')
 
 if 'gmail.com' in domain:
     print(domain)
