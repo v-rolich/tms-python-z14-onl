@@ -3,5 +3,5 @@
 # поэтому символы выводятся начиная с первого, индексы 0,2,4,6….).
 
 
-Batflietrtagy = 'Beautiful is better than ugly.'
-print(Batflietrtagy, '-', 'строка с четными индексами:', Batflietrtagy[:30:2])
+rest = input('Введите строку: ')
+print(rest, '-', 'строка с четными индексами:', rest[::2])

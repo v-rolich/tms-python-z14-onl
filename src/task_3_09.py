@@ -12,22 +12,21 @@ a = float(input("a = "))
 b = float(input("b = "))
 c = float(input("c = "))
 
-D = b ** 2 - 4 * a * c
+discriminant = b ** 2 - 4 * a * c
 
-if D < 0:
+if discriminant < 0:
     print("Дискриминант = 0")
     print("Нет действительных корней")
 
-elif D == 0:
-    x = (-b + D ** .5) / (2 * a)
-    print("Дискриминант = ", D)
+elif discriminant == 0:
+    x = (-b + discriminant ** .5) / (2 * a)
+    print("Дискриминант = ", discriminant)
     print("Один действительный корень", x)
 
-else:
-    if D > 0:
-        x1 = (-b + D ** .5) / (2 * a),
-        x2 = (-b - D ** .5) / (2 * a)
-        print("Дискриминант = ", D)
-        print("Два действительных корня: ")
-        print("Корень 1 = ", x1)
-        print("Корень 2 = ", x2)
+elif discriminant > 0:
+    x1 = (-b + discriminant ** .5) / (2 * a),
+    x2 = (-b - discriminant ** .5) / (2 * a)
+    print("Дискриминант = ", discriminant)
+    print("Два действительных корня: ")
+    print("Корень 1 = ", x1)
+    print("Корень 2 = ", x2)

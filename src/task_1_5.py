@@ -1,10 +1,7 @@
 # Даны катеты прямоугольного треугольника. Найти его гипотенузу и площадь.
 
-from math import sqrt
-
-
 def get_zaq(a, b):
-    return sqrt(a * a + b * b)
+    return (a * a + b * b) ** 0.5
 
 
 print('Гипотенуза равна:', get_zaq(5, 6))
