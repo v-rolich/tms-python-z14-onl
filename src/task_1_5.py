@@ -11,6 +11,6 @@ s_triangle = (u * w) / 2
 t = 'Гипотенуза треугольника равна:'
 t_hypotenuse = (u ** 2 + w ** 2) ** 1 / 2
 
-print([s, (s_triangle)])
+print([s, s_triangle])
 
-print([t, (t_hypotenuse)])
+print([t, t_hypotenuse])
