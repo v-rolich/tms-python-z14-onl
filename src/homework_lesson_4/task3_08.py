@@ -7,4 +7,3 @@ if not a.isdigit():
 else:
     c = int(a)
     print(c ** 3)
-    
