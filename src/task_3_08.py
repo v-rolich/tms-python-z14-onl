@@ -1,7 +1,7 @@
 # Ввести число, проверить на то, чтобы было введено именно число.
 # Возвести его в куб.
 
-s = float(input('Enter your number: '))
-
-if type(s) == int or type(s) == float:
-    print(s * 5)
+s = (1, 2, 3, 4, 5,)
+for item in s:
+    if item == int or float:
+        print(item ** 3, end=',')

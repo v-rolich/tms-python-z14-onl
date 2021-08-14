@@ -17,13 +17,10 @@ discriminant = b ** 2 - 4 * a * c
 if discriminant < 0:
     print("Дискриминант = 0")
     print("Нет действительных корней")
-
 elif discriminant == 0:
     x = (-b + discriminant ** .5) / (2 * a)
     print("Дискриминант = ", discriminant)
     print("Один действительный корень", x)
-
-elif discriminant > 0:
     x1 = (-b + discriminant ** .5) / (2 * a),
     x2 = (-b - discriminant ** .5) / (2 * a)
     print("Дискриминант = ", discriminant)
