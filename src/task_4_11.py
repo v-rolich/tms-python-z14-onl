@@ -6,7 +6,7 @@ gmail.com, вывести на экран имя почтового ящика. 
 
 domain = input('Enter your domain: ')
 
-if 'gmail.com' in domain:
+if domain.endswith('@gmail.com'):
     print(domain)
 else:
     print('DOMAIN NAME is not supported')

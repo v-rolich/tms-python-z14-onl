@@ -12,5 +12,5 @@ if len_line > 5:
     print(len_line)
 elif len_line < 5:
     print('Need more')
-elif len_line == 5:
+else:
     print('It is five')

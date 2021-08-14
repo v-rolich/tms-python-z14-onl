@@ -27,6 +27,6 @@ elif discriminant == 0:
     print(f'Дискриминант = {discriminant}')
     print(f'Один действительный корень {x}')
 
-elif discriminant < 0:
+else:
     print("Дискриминант < 0")
     print("Нет действительных корней")

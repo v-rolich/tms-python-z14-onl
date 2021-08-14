@@ -9,3 +9,5 @@ len_sentence = len(sentence)
 
 if len_sentence == 3:
     print(f'{sentence}!')
+else:
+    print('the sum of symbols is not equal 3')

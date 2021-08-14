@@ -12,7 +12,7 @@ elif rubel % 10 in (0, 5, 6, 7, 8, 9):
     print(f'{rubel} рублей', end='')
 elif rubel % 10 == 1:
     print(f'{rubel} рубль', end='')
-elif rubel % 10 in (2, 3, 4):
+else:
     print(f'{rubel} рубля', end='')
 
 if (coin % 100) // 10 == 1:
@@ -21,5 +21,5 @@ elif coin % 10 in (0, 5, 6, 7, 8, 9):
     print(f' {coin} копеек')
 elif coin % 10 == 1:
     print(f' {coin} копейка')
-elif coin % 10 in (2, 3, 4):
+else:
     print(f' {coin} копейки')
