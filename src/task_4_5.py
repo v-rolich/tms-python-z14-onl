@@ -13,7 +13,7 @@ number = 15
 ls1 = []
 for i in range(number):
     if i > 1:
-        ls1.append(ls1[i-2] + ls1[i-1])
+        ls1.append(ls1[i - 2] + ls1[i - 1])
     else:
         ls1.append(1)
 print(ls1)
@@ -22,7 +22,7 @@ ls2 = []
 i = 0
 while i < number:
     if i > 1:
-        ls2.append(ls2[i-2] + ls2[i-1])
+        ls2.append(ls2[i - 2] + ls2[i - 1])
     else:
         ls2.append(1)
     i += 1

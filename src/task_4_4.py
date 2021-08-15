@@ -3,7 +3,7 @@
 a = [1, 2, 3, 4, 5]
 b = []
 # 1е решение через цикл for
-for i in range(1-len(a), 1):
+for i in range(1 - len(a), 1):
     b.append(a[i])
 print(b)
 # 2е решение через цикл while
