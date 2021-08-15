@@ -5,7 +5,12 @@
 a = int(input('num\n'))
 
 c = [a, a]
-for i in range(13):
+'''for i in range(13):
     c.append(c[i] + c[i + 1])
 
+print(c)'''
+u = 0
+while u <= 13:
+    c.append(c[u] + c[u + 1])
+    u += 1
 print(c)
