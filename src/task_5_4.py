@@ -17,11 +17,3 @@ while n <= 0:
     n += 1
 print(f'Список через while {third_list}')
 
-# i = 0
-# while i < len(first_list) - 1:
-#     t = first_list[i]
-#     first_list[i] = first_list[i + 1]
-#     first_list[i + 1] = t
-#     i += 1
-# print(first_list)
-
