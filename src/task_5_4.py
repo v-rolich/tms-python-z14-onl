@@ -16,4 +16,3 @@ while n <= 0:
     third_list.append(first_list[n])
     n += 1
 print(f'Список через while {third_list}')
-
