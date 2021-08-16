@@ -5,12 +5,12 @@ a = [1, 5, 3]
 b = []
 # 1е решение через цикл for
 for i in range(len(a)):
-    b.append(a[i] * 2)
+    b.append(a[i] * -2)
 print(b)
 # 2е решение через цикл while
 c = []
 i = 0
 while i < len(a):
-    c.append(a[i] * 2)
+    c.append(a[i] * -2)
     i += 1
 print(c)
