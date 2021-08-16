@@ -1,10 +1,10 @@
 # Дан список целых чисел. Подсчитать сколько четных чисел в списке
 a = list(range(1, 50))
-b = []
+b = 0
 for c in a:
     if c % 2 == 0:
-        b.append(c)
-print(len(b))
+        b += 1
+print(b)
 d = len(a)
 i = []
 f = 0
