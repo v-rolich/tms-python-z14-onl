@@ -1,2 +1,2 @@
-flake8
-pydocstyle
+flake8==3.9.2
+pycodestyle==2.7.0
