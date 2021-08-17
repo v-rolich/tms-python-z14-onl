@@ -4,16 +4,27 @@
 # (пример {‘key’: ‘value’} -> {‘key3’:
 # # ‘value’}). Чтобы получить список ключей - использовать метод .keys()
 # (подсказка: создается новый ключ с цифрой в конце, старый удаляется)
-a = {'test': 'test_value', 'europe': 'eur', 'dollar': 'usd', 'ruble': 'rub'}
-i = 0
+
 # 1е решение через цикл while
-while i < len(a.keys()):
-    a[list(a.keys())[0] + str(len(list(a.keys())[0]))] = a[list(a.keys())[0]]
-    del a[list(a.keys())[0]]
+
+a = {'test': 'test_value', 'europe': 'eur', 'dollar': 'usd', 'ruble': 'rub'}
+c = list(a.keys())
+values = list(a.values())
+i = 0
+d = {}
+while i < len(c):
+    c[i] += str(len(c[i]))
+    d[c[i]] = values[i]
     i += 1
-print(a)
+print(d)
+
 # 2е решение через цикл for
+
 b = {'test': 'test_value', 'europe': 'eur', 'dollar': 'usd', 'ruble': 'rub'}
-for key in list(b.keys()):
-    b[key + str(len(key))] = b.pop(key)
-print(b)
+d = {}
+h = list(b.keys())
+values = list(b.values())
+for i in range(len(h)):
+    h[i] += str(len(h[i]))
+    d[h[i]] = values[i]
+print(d)

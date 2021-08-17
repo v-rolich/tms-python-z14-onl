@@ -4,8 +4,8 @@
 a = [1, 5, 3]
 b = []
 # 1е решение через цикл for
-for i in range(len(a)):
-    b.append(a[i] * -2)
+for i in a:
+    b.append(i * -2)
 print(b)
 # 2е решение через цикл while
 c = []

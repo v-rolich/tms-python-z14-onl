@@ -2,8 +2,8 @@
 a = [5, 9, 6, 4]
 b = 0
 # 1е решение через цикл for
-for j in range(len(a)):
-    if a[j] % 2 == 0:
+for j in a:
+    if j % 2 == 0:
         b += 1
 print(b)
 # 2е решение через цикл while
