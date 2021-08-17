@@ -7,23 +7,16 @@
 dic = {'test': 'test_value',
        'europe': 'eur',
        'dollar': 'usd',
-       'ruble': 'rub'}
+       'ruble': 'rub',
+       }
 
-for key in list(dic.keys()):
-    dic[key + str(len(key))] = dic.pop(key)
-print(f'Способ через for {dic}')
+# k = key, v = value
+dic2 = {k + str(len(k)): v for k, v in dic.items()}
+print(dic2)
 
-
-dic_2 = {'test': 'test_value',
-         'europe': 'eur',
-         'dollar': 'usd',
-         'ruble': 'rub'}
-
-keys = list(dic_2.keys())
+dic3 = {}
 i = 0
-
-while i < len(keys):
-    t = keys[i]
-    dic_2[t + str(len(t))] = dic_2.pop(t)
+while i < len(dic):
+    dic3 = {k1 + str(len(k1)): v1 for k1, v1 in dic.items()}
     i += 1
-print(f'Способ через while {dic_2}')
+print(dic3)

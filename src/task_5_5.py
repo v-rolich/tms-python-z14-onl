@@ -17,9 +17,10 @@ while i < number:
     print(f2, end=' ')
     i += 1
 
+print()
 
 fib1 = fib2 = 1
-print(f'\n{fib1} {fib2}', end=' ')
+print(f'{fib1} {fib2}', end=' ')
 
 for i in range(2, number):
     fib1, fib2 = fib2, fib1 + fib2

@@ -10,9 +10,9 @@ second_list = [i * (-2) for i in first_list]
 print(f'Список через for: {second_list}')
 
 third_list = []
-total = 0
-while total < len(first_list):
-    third_list.append(first_list[total] * (-2))
-    total += 1
+i = 0
+while i < len(first_list):
+    third_list.append(first_list[i] * (-2))
+    i += 1
 
 print(f'Список через while: {third_list}')
