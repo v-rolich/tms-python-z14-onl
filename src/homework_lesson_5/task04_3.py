@@ -8,9 +8,11 @@ for i in a.keys():
 a = b
 print(a)
 
-'''keys = list(a.keys())
+dic = {'test': 'test_value', 'europe': 'eur', 'dollar': 'usd', 'ruble': 'rub'}
+c = {}
+keys = list(dic.keys())
 i = 0
 while i < len(keys):
-    b.__setitem__(keys[i] + str(len(keys[i])), a.get(keys[i]))
+    c.__setitem__(keys[i] + str(len(keys[i])), dic.get(keys[i]))
     i = i + 1
-print(b)'''
+print(c)
