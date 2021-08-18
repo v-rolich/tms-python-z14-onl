@@ -5,9 +5,8 @@
 среднеарифметическое либо среднегеометрическое.
 Написать программу в виде трех функций.
 """
-
-import random as r
 from numpy import array
+import random as r
 
 
 def create_type(*count: int, mean_type: int):
