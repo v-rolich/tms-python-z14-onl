@@ -24,4 +24,4 @@ while i <= count_number:
         break
     i += 1
 else:
-    print(f'You are the loser {number}')
+    print(f'You are the loser - correct number  {number}')
