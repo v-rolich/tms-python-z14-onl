@@ -7,7 +7,7 @@
 """
 
 import random as r
-import numpy as np
+from numpy import array
 
 
 def create_type(*count: int, mean_type: int):
@@ -30,7 +30,7 @@ type = create_type(1, 2, 3, 10, mean_type=r.randint(1, 20))
 
 
 def average_func(type):
-    a = np.array(type)
+    a = array(type)
     # Создаём условия, какой формулой будем пользоваться
     if sum(type) >= 100:
         return a.prod() ** (1.0 / len(a))
