@@ -15,4 +15,3 @@ def kwargs_count(**d):
 kwargs_count(dog='Samoyed', cat='maine coon',
              bigdog='Mastiff', animal='giraffe',
              animals='zoo', monkey='its animal',)
-
