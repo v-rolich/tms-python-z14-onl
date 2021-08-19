@@ -3,8 +3,8 @@
 # аргументов и выводит на экран те из них,
 # длина ключа которых четна.
 
-def func(**args):
-    for key, value in args.items():
+def func(**kwargs):
+    for key, value in kwargs.items():
         if len(key) % 2 == 0:
             return key, value
 
