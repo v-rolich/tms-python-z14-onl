@@ -7,5 +7,5 @@ def args_count(*args):
 
 
 summa, maxim = args_count(15, 2, 1, 4)
-print(f'Сумма: {summa}')
-print(f'Максимальное {maxim}')
+print(f'Сумма равна: {summa}')
+print(f'Максимальный аргумент равен: {maxim}')

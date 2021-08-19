@@ -4,11 +4,14 @@
 #random_to(по-умолчанию(9)).
 import random as number
 
-def create_matrix(n, random_from=1, random_to=9):
-    matrix = []
+def matrix(n: int):
+    b = []
     for _ in range(n):
-        matrix.append(number.randint(random_from, random_to))
-    return matrix
+        a = []
+        for _ in range(n):
+            a.append(random.randint(1, 9))
+        b.append(a)
+    return b
 
 
-print(create_matrix(3))
+print(matrix(5))
