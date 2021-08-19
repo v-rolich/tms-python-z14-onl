@@ -7,10 +7,10 @@
 # угадано - выводить: You are the loser и правильное число.
 import random
 number_of_attempts = int(input('enter number of attempts\n'))
-range_1 = int(input('enter num_1\n'))
-range_2 = int(input('enter num_2\n'))
+range_1 = int(input('enter lower border\n'))
+range_2 = int(input('enter upper border\n'))
 num = random.randint(range_1, range_2)
-print('Угадате число между num_1 и num_2')
+print('Угадате число между lower и upper border')
 count = 0
 while number_of_attempts > count:
     num_1 = int(input('enter your answer\n'))
