@@ -6,14 +6,14 @@
 import random
 
 
-def matrix(n: int):
-    b = []
+def create_matrix(n: int):
+    i = []
     for _ in range(n):
-        a = []
+        j = []
         for _ in range(n):
-            a.append(random.randint(1, 9))
-        b.append(a)
-    return b
+            j.append(random.randint(1, 9))
+        i.append(j)
+    return i
 
 
-print(matrix(5))
+print(create_matrix(4))
