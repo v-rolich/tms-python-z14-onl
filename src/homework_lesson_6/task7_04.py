@@ -5,12 +5,12 @@
 import random
 
 
-def matrix(n):
+def matrix(n, random_from=1, random_to=9):
     a = []
     for i in range(n):
         b = []
         for j in range(n):
-            num = random.randint(1, 9)
+            num = random.randint(random_from, random_to)
             b.append(num)
         a.append(b)
         print(b)
