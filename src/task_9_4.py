@@ -17,4 +17,3 @@ def create_lst(n):
 
 
 create_lst([1, 2, 3, 4, 5])
-
