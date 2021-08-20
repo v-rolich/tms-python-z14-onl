@@ -6,7 +6,7 @@
 """
 
 
-def kwargs_count(**d):
+def kwargs_count(**kwargs):
     for k, v in d.items():
         if len(k) % 2 == 0:
             print(k, v)

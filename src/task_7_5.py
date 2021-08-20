@@ -6,10 +6,8 @@
 
 
 def arg_count(*args):
-    count = 0
-    for i in args:
-        count += i * args.index(i)
-    return count
+    a = [elem * i for i, elem in enumerate(args)]
+    print(sum(a))
 
 
-print(arg_count(5, 2, 1, 6))
+arg_count(6, 3, 2, 3)

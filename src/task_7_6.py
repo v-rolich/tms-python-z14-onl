@@ -10,5 +10,5 @@ def args_count(*args):
 
 
 s, m = args_count(2, 10, 15, 5, 8)
-print(f'Сумма: {s}')
-print(f'Максимальное {m}')
+print(f'Сумма чисел равна: {s}')
+print(f'Максимальное число: {m}')

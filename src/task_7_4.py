@@ -9,9 +9,12 @@ import random as r
 
 def create_matrix(n, random_from=1, random_to=9):
     matrix = []
-    for _ in range(n):
-        matrix.append(r.randint(random_from, random_to))
-    return matrix
+    for i in range(n):
+        lst = []
+        for j in range(n):
+            lst.append(r.randint(random_from, random_to))
+        matrix.append(lst)
+    return print('\n'.join(str(i) for i in matrix))
 
 
-print(create_matrix(5))
+create_matrix(5)
