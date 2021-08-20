@@ -7,7 +7,7 @@
 
 
 def kwargs_count(**kwargs):
-    for k, v in d.items():
+    for k, v in kwargs.items():
         if len(k) % 2 == 0:
             print(k, v)
 
