@@ -5,9 +5,14 @@
 """
 
 
-def count(*args):
-    a = [args.count(i) for i in args]
-    print(a)
+def count_numbers(numbers_list: list):
+    numbers_set = set(numbers_list)
+    result = dict()
+
+    for number in numbers_set:
+        result[number] = numbers_list.count(number)
+
+    return result
 
 
-count(2, 4, 5, 10, 10, 44, 10, 11, 13, 2)
+print(count_numbers([1, 1, 3, 5, 1, 3, 2, 2, 10, 15, 5]))

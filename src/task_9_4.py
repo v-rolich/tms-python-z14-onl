@@ -5,15 +5,15 @@
 
 
 def decorator(func):
-    def wrapper(lst):
-        new_func = [i for i in lst[::-1]]
-        return func(new_func)
+    def wrapper(*args):
+        new_func = [i for i in args[::-1]]
+        return func(*new_func)
     return wrapper
 
 
 @decorator
-def create_lst(n):
-    print(n)
+def create_lst(*args):
+    print(args)
 
 
-create_lst([1, 2, 3, 4, 5])
+create_lst(1, 2, 3, 4, 5)
