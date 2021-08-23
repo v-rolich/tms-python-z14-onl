@@ -16,4 +16,3 @@ def count_1(a: list):
 
 
 print(count_1(num_list))
-
