@@ -4,7 +4,7 @@
 with open('some_text.txt') as st:
     a = st.readlines()
 for i, v in enumerate(a):
-    if (i+1) % 2 == 0:
+    if (i + 1) % 2 == 0:
         with open('text5', 'a') as tx5:
             tx5.writelines(v)
     else:
