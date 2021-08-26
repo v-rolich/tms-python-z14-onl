@@ -6,9 +6,10 @@
 """
 
 
-from csv_utils import csv_writer
+from csv_utils import csv_add
+from csv_utils import csv_delete
 from csv_utils import csv_reader
-from csv_utils import csv_add, csv_delete
+from csv_utils import csv_writer
 
 
 # Создаём файл с инофрмацие о товаре
