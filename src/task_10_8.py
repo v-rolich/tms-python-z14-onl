@@ -6,7 +6,10 @@
 """
 
 
-from csv_utils import csv_writer, csv_add, csv_reader, csv_delete
+from csv_utils import csv_writer
+from csv_utils import csv_add
+from csv_utils import csv_reader
+from csv_utils import csv_delete
 
 # Создаём файл с инофрмацие о товаре
 data = [['Имя товара', 'цена', 'количество', 'комментарий'],

@@ -32,11 +32,6 @@ def csv_add(data, path):
 
 
 def csv_delete(path, path_2, n):
-    """
-    :param path - созданный ранее файл CSV
-    :param path_2 - создаём новый файл и передаём новые параметры, после удаления определённой строки
-    :param n - строка которую необхожимо удалить
-    """
     with open(path, 'r') as inp, open(path_2, 'w', newline='') as out:
         writer = csv.writer(out)
         for row, i in enumerate(csv.reader(inp)):
