@@ -37,18 +37,20 @@ class Pet:
         self.height = self.change + self.height
         return self.height
 
-
     def info(self):
         print('Name:', self.name, '\n', 'Age:', self.age,
               '\n', 'Height:', self.height, '\n', 'Weight:', self.weight, '\n')
+
 
 class Dog(Pet):
     def bark(self):
         print('I am dog, and i say "woth"')
 
+
 class Cat(Pet):
     def meow(self):
         print('I am cat, and i say "meow"')
+
 
 class Parrot(Pet):
     def fly(self):
@@ -60,7 +62,6 @@ class Parrot(Pet):
     def change_weight(self, change=0.07):
         self.change = change
         self.weight = self.change + self.weight
-
 
     def change_height(self, change=7):
         self.change = change
