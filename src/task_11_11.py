@@ -61,7 +61,7 @@ class Dog(Pet):
         print(f'Dog say - {self.bark}')
 
 
-d = Dog('Puppy', 4, 'Pavel', 1000, 2, 10, '10.08.2017', 10, 1.5,  'Woof Woof!')
+d = Dog('Puppy', 4, 'Pavel', 1000, 2, 10, '10.08.2017', 10, 1.5, 'Woof Woof!')
 d.info()
 d.info_run()
 d.info_jump()
