@@ -13,8 +13,9 @@ class Pet:
         Pet.last_name = name
 
     @staticmethod
-    def get_random_name(name):
-        return r.randint(0, name)
+    def get_random_name():
+        letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+        return f'{letters[r.randint(0, 27)]} - {r.randint(0, 100)}'
 
 
-print(f'A - {Pet.get_random_name(100)}')
+print(Pet.get_random_name())
