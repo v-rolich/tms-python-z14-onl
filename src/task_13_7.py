@@ -2,7 +2,8 @@
 Реализовать интерфейсы: Feline(), Canine()
 """
 
-from abc import ABC, abstractmethod
+from abc import ABC
+from abc import abstractmethod
 
 
 class Feline(ABC):
