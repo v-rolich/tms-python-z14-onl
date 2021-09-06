@@ -16,16 +16,13 @@ os.chdir(args.dir_name)
 
 with open(args.file_name, 'w') as py_file:
     if '.py' in args.file_name:
-        py_file.writelines(
-           """
-def main():
-    pass
-    
-    
-if __name__ == '__main__':
-    main()
-"""
-        )
+        py_file.writelines("def main():\n"
+                           "    pass\n"
+                           "    \n"
+                           "    \n"
+                           "if __name__ == '__main__':\n"
+                           "    main()\n"
+                           )
     else:
         with open(args.file_name, 'w') as file:
             file.close()
