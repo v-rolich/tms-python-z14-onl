@@ -1,7 +1,7 @@
 # Сделать класс Pet абстрактным
-import random
 from abc import ABC
 from abc import abstractmethod
+import random
 
 
 class Pet(ABC):
