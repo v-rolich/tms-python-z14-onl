@@ -10,7 +10,7 @@ parser.add_argument('-fn', '--first-name',
                     required=True)
 parser.add_argument('-ln', '--last-name',
                     required=True)
-parser.add_argument('-age', required=True)
+parser.add_argument('-a', '--age', required=True)
 args = parser.parse_args()
 print(args)
 
