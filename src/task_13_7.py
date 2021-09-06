@@ -9,14 +9,12 @@ from abc import abstractmethod
 class Feline(ABC):
     @abstractmethod
     def __init__(self):
-        print('meow')
         raise NotImplementedError
 
 
 class Canine(ABC):
     @abstractmethod
     def __init__(self):
-        print('Woof Woof')
         raise NotImplementedError
 
 

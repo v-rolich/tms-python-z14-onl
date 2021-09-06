@@ -9,7 +9,7 @@ from abc import abstractmethod
 class Pet(ABC):
     @abstractmethod
     def voice(self):
-        print('Say something')
+        pass
 
 
 class Dog(Pet):
