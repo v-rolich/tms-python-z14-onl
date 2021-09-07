@@ -30,5 +30,10 @@ class Matrix:
             print(i)
 
 
-matrix = Matrix(a=10, b=99)
-matrix.__str__()
+def main():
+    matrix = Matrix(a=10, b=99)
+    matrix.__str__()
+
+
+if __name__ == '__main':
+    main()
