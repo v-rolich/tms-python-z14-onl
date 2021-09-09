@@ -8,8 +8,7 @@ cur.execute('''CREATE TABLE department
                (department_id int  PRIMARY KEY, name text)''')
 
 # Таблица Teacher
-cur.execute('''CREATE TABLE teacher
-               (teacher_id int PRIMARY KEY, department_id int, 
+cur.execute('''CREATE TABLE teacher(teacher_id int PRIMARY KEY, department_id int,
                first_name text, last_name text, phone_number int,
                FOREIGN KEY(department_id) REFERENCES department(department_id))''')
 
