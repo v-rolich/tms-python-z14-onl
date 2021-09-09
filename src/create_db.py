@@ -1,5 +1,5 @@
 import sqlite3
-from data import Dep_lst, Course_lst, Teacher_lst, Section_lst, Student_lst, Student_section_lst
+from data_db import Dep_lst, Course_lst, Teacher_lst, Section_lst, Student_lst, Student_section_lst
 
 con = sqlite3.connect('MyDB.db')
 
