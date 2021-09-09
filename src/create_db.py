@@ -1,5 +1,5 @@
-import sqlite3
 import data_db as db
+import sqlite3
 
 con = sqlite3.connect('MyDB.db')
 
@@ -9,7 +9,7 @@ cur.execute('''CREATE TABLE Department
                (id int PRIMARY KEY, name text)''')
 
 cur.execute('''CREATE TABLE Teacher
-               (id int PRIMARY KEY, first_name text, last_name text,\n 
+               (id int PRIMARY KEY, first_name text, last_name text, 
                phone_number int, department int,
                FOREIGN KEY (department) REFERENCES Department (id))''')
 
