@@ -1,10 +1,5 @@
 import sqlite3
-from data_db import Course_lst
-from data_db import Dep_lst
-from data_db import Section_lst
-from data_db import Student_lst
-from data_db import Student_section_lst
-from data_db import Teacher_lst
+import data_db as db
 
 con = sqlite3.connect('MyDB.db')
 
@@ -14,7 +9,7 @@ cur.execute('''CREATE TABLE Department
                (id int PRIMARY KEY, name text)''')
 
 cur.execute('''CREATE TABLE Teacher
-               (id int PRIMARY KEY, first_name text, last_name text, 
+               (id int PRIMARY KEY, first_name text, last_name text,\n 
                phone_number int, department int,
                FOREIGN KEY (department) REFERENCES Department (id))''')
 
@@ -36,12 +31,12 @@ cur.execute('''CREATE TABLE Student_section
                FOREIGN KEY (section_id) REFERENCES Section (id),
                FOREIGN KEY (student_id) REFERENCES Student (id))''')
 
-cur.executemany("INSERT INTO Department VALUES (?, ?)", Dep_lst)
-cur.executemany("INSERT INTO Course VALUES (?, ?, ?, ?)", Course_lst)
-cur.executemany("INSERT INTO Teacher VALUES (?, ?, ?, ?, ?)", Teacher_lst)
-cur.executemany("INSERT INTO Section VALUES (?, ?, ?, ?)", Section_lst)
-cur.executemany("INSERT INTO Student VALUES (?, ?, ?, ?, ?)", Student_lst)
-cur.executemany("INSERT INTO Student_section VALUES (?, ?, ?)", Student_section_lst)
+cur.executemany("INSERT INTO Department VALUES (?, ?)", db.Dep_lst)
+cur.executemany("INSERT INTO Course VALUES (?, ?, ?, ?)", db.Course_lst)
+cur.executemany("INSERT INTO Teacher VALUES (?, ?, ?, ?, ?)", db.Teacher_lst)
+cur.executemany("INSERT INTO Section VALUES (?, ?, ?, ?)", db.Section_lst)
+cur.executemany("INSERT INTO Student VALUES (?, ?, ?, ?, ?)", db.Student_lst)
+cur.executemany("INSERT INTO Student_section VALUES (?, ?, ?)", db.Student_section_lst)
 
 con.commit()
 con.close()
