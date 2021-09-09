@@ -1,5 +1,10 @@
 import sqlite3
-from data_db import Dep_lst, Course_lst, Teacher_lst, Section_lst, Student_lst, Student_section_lst
+from data_db import Course_lst
+from data_db import Dep_lst
+from data_db import Section_lst
+from data_db import Student_lst
+from data_db import Student_section_lst
+from data_db import Teacher_lst
 
 con = sqlite3.connect('MyDB.db')
 
@@ -9,7 +14,8 @@ cur.execute('''CREATE TABLE Department
                (id int PRIMARY KEY, name text)''')
 
 cur.execute('''CREATE TABLE Teacher
-               (id int PRIMARY KEY, first_name text, last_name text, phone_number int, department int,
+               (id int PRIMARY KEY, first_name text, last_name text, 
+               phone_number int, department int,
                FOREIGN KEY (department) REFERENCES Department (id))''')
 
 cur.execute('''CREATE TABLE Course
