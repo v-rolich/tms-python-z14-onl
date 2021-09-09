@@ -8,10 +8,10 @@ cur = con.cursor()
 cur.execute('''CREATE TABLE Department
                (id int PRIMARY KEY, name text)''')
 
-cur.execute('''CREATE TABLE Teacher
-               (id int PRIMARY KEY, first_name text, last_name text, 
-               phone_number int, department int,
-               FOREIGN KEY (department) REFERENCES Department (id))''')
+cur.execute('CREATE TABLE Teacher\n'
+            '               (id int PRIMARY KEY, first_name text, last_name text, \n'
+            '               phone_number int, department int,\n'
+            '               FOREIGN KEY (department) REFERENCES Department (id))')
 
 cur.execute('''CREATE TABLE Course
                (id int PRIMARY KEY, title text, department int, other_details text,
