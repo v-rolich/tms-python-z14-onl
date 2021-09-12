@@ -15,7 +15,6 @@
 # Создать 5 книг. Получить всех студентов и добавить каждому студенту эти
 # пять книг.
 
-
 from sqlalchemy.orm import declarative_base, relationship, sessionmaker
 from sqlalchemy import Column, Integer, String, ForeignKey, create_engine
 # from sqlalchemy import Table
