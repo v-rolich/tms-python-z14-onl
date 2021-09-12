@@ -16,8 +16,7 @@
 # пять книг.
 
 from sqlalchemy.orm import declarative_base, relationship, sessionmaker
-from sqlalchemy import Column, Integer, String, ForeignKey, create_engine
-# from sqlalchemy import Table
+from sqlalchemy import Column, Integer, String, ForeignKey, create_engine, Table
 from sqlalchemy_utils import create_database, database_exists
 
 DB_USER = 'postgres'
@@ -49,22 +48,22 @@ class Diary(Base):
 
 
 # Задание 16_04
-# association_table = Table('association', Base.metadata,
-#                           Column('student_id', Integer,
-#                           ForeignKey('student.id')),
-#                           Column('book_id', Integer,
-#                           ForeignKey('book.id'))
-#                           )
-#
-#
-# class Book(Base):
-#     __tablename__ = 'book'
-#     id = Column(Integer, primary_key=True)
-#     book_name = Column(String)
-#     number_page = Column(Integer)
-#     # many-to-many(16_04)
-#      students = relationship("Students", secondary=association_table,
-#                              backref='book')
+association_table = Table('association', Base.metadata,
+                          Column('student_id', Integer,
+                          ForeignKey('student.id')),
+                          Column('book_id', Integer,
+                          ForeignKey('book.id'))
+                          )
+
+
+class Book(Base):
+    __tablename__ = 'book'
+    id = Column(Integer, primary_key=True)
+    book_name = Column(String)
+    number_page = Column(Integer)
+    # many-to-many(16_04)
+    students = relationship("Students", secondary=association_table,
+                            backref='book')
 
 
 class Students(Base):
@@ -83,10 +82,10 @@ class Students(Base):
 Base.metadata.create_all(engine)
 Session = sessionmaker(engine)
 session = Session()
-# session.add_all([
-#      Book(book_name='Captain Kidd', number_page=230),
-#      Book(book_name='The Adventures of Tom Sawyer', number_page=200),
-#      Book(book_name='Huckleberry Finn', number_page=110)])
+session.add_all([
+     Book(book_name='Captain Kidd', number_page=230),
+     Book(book_name='The Adventures of Tom Sawyer', number_page=200),
+     Book(book_name='Huckleberry Finn', number_page=110)])
 session.add_all([
     Students(first_name='wendy', last_name='Wendy Williams', group='Python'),
     Students(first_name='mary', last_name='Mary Contrary', group='Java'),
