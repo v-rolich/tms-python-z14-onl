@@ -47,7 +47,7 @@ class Group(Base):
 class Diary(Base):
     __tablename__ = 'diary'
     id = Column(Integer, primary_key=True)
-    sr_ball = Column(String)
+    avg_marks = Column(String)
     students = relationship("Students", back_populates="diary", uselist=False)
 
 
@@ -87,8 +87,8 @@ session.add_all([
     Group(name='Python'),
     Group(name='Java')])
 session.add_all([
-    Diary(sr_ball=5),
-    Diary(sr_ball=4),
-    Diary(sr_ball=3)])
+    Diary(avg_marks=5),
+    Diary(avg_marks=4),
+    Diary(avg_marks=3)])
 
 session.commit()
