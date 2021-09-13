@@ -11,7 +11,8 @@
 
 from sqlalchemy.orm import declarative_base, relationship, sessionmaker
 from sqlalchemy import Column, Integer, String, ForeignKey, create_engine, Table
-from sqlalchemy_utils import create_database, database_exists
+from sqlalchemy_utils import create_database
+from sqlalchemy_utils import database_exists
 
 DB_USER = 'postgres'
 DB_PASSWORD = 'Micro1soft18'
