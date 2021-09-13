@@ -9,9 +9,9 @@
 # Создать 5 книг. Получить всех студентов и добавить каждому студенту эти
 # пять книг.
 
-from sqlalchemy import *
-from sqlalchemy.orm import *
-from sqlalchemy_utils import *
+from sqlalchemy.orm import declarative_base, relationship, sessionmaker
+from sqlalchemy import Column, Integer, String, ForeignKey, create_engine, Table
+from sqlalchemy_utils import create_database, database_exists
 
 DB_USER = 'postgres'
 DB_PASSWORD = 'Micro1soft18'
