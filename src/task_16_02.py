@@ -12,11 +12,8 @@
 # Создать 5 книг. Получить всех студентов и добавить каждому студенту эти
 # пять книг.
 from sqlalchemy import create_engine
-
 from sqlalchemy.orm import declarative_base, relationship, sessionmaker
-
 from sqlalchemy import Column, Integer, String, ForeignKey, Float, Table
-
 from sqlalchemy_utils import create_database, database_exists
 
 DB_USER = 'postgres'
