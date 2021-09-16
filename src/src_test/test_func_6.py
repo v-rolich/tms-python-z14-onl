@@ -7,7 +7,6 @@ from src.task_func_6 import (write_csv,
                              count_total_products_amount,
                              find_max_price_product,
                              find_min_price_product,
-                             reduce_product_amount,
                              prepare_csv_data)
 
 

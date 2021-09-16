@@ -1,5 +1,5 @@
-import unittest
 from src.task_func_3 import Math
+import unittest
 
 
 class TestFunc(unittest.TestCase):

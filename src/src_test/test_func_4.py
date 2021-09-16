@@ -1,5 +1,6 @@
 import unittest
-from src.task_func_4 import validate_author, validate_pages, validate_price, validate_year
+from src.task_func_4 import (validate_author, validate_pages,
+                             validate_price, validate_year)
 
 
 class TestFunc(unittest.TestCase):

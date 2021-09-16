@@ -1,5 +1,5 @@
-import unittest
 from src.task_func_2 import validate_args
+import unittest
 
 
 class TestFunc(unittest.TestCase):
