@@ -1,13 +1,13 @@
+from src.task_func_6 import add_row_to_csv
+from src.task_func_6 import count_total_products_amount
+from src.task_func_6 import del_row_from_csv
+from src.task_func_6 import find_max_price_product
+from src.task_func_6 import find_min_price_product
+from src.task_func_6 import prepare_csv_data
+from src.task_func_6 import print_csv
+from src.task_func_6 import read_csv
+from src.task_func_6 import write_csv
 import unittest
-from src.task_func_6 import (write_csv,
-                             read_csv,
-                             print_csv,
-                             add_row_to_csv,
-                             del_row_from_csv,
-                             count_total_products_amount,
-                             find_max_price_product,
-                             find_min_price_product,
-                             prepare_csv_data)
 
 
 class TestCsv(unittest.TestCase):
