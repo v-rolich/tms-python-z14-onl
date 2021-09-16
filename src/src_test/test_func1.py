@@ -1,5 +1,8 @@
 import unittest
-from src.task_func_1 import (calc_sum, calc_mult, calc_diff, calc_div)
+from src.task_func_1 import calc_diff
+from src.task_func_1 import calc_div
+from src.task_func_1 import calc_mult
+from src.task_func_1 import calc_sum
 
 
 class TestFunc(unittest.TestCase):
