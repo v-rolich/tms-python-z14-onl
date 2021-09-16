@@ -1,6 +1,8 @@
+from src.task_func_4 import validate_author
+from src.task_func_4 import validate_pages
+from src.task_func_4 import validate_price
+from src.task_func_4 import validate_year
 import unittest
-from src.task_func_4 import (validate_author, validate_pages,
-                             validate_price, validate_year)
 
 
 class TestFunc(unittest.TestCase):

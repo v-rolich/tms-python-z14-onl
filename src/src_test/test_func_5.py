@@ -1,5 +1,7 @@
+from src.task_func_5 import matrix_max_elem
+from src.task_func_5 import matrix_min_elem
+from src.task_func_5 import matrix_sum
 import unittest
-from src.task_func_5 import (matrix_max_elem, matrix_min_elem, matrix_sum)
 
 
 class TestFunc(unittest.TestCase):
