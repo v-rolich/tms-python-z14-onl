@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Online store</title>
+{% endblock %}
+
+{% block body %}
+
+<a href="/add product" class="w-200 btn btn-lg btn-outline-primary">Add product</a>
+ <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+      <h1 class="display-4 fw-normal">List of products</h1>
+ </div>
+
+    <div class="card mb-4 rounded-3 shadow-sm">
+    {% for i in data %}
+      <h4 class="card-title pricing-card-title">{{i.name}}</h4>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Price:{{i.price}}</li>
+              <li>Amount:{{i.amount}}</li>
+            </ul>
+            <a href="/details/{{i.id}}" class="w-100 btn btn-lg btn-outline-primary">Change value</a>
+
+    {%endfor%}
+    </div>
+
+
+
+{% endblock %}
