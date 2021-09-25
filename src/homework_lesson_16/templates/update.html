@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Details</title>
+{% endblock %}
+
+{% block body %}
+<h2>Change value</h2>
+<form  method="post">
+<input type="text" class="form-control" name="name" id="name" placeholder="Enter product name"><br>
+<input type="number" class="form-control" name="price" id="price" placeholder="Enter price"><br>
+<input type="number" class="form-control" name="amount" id="amount" placeholder="Enter amount"><br>
+<input type="text" class="form-control" name="comment" id="comment" placeholder="Enter comment"><br>
+<button class="btn btn-success" type="submit">Accept</button>
+
+</form>
+{% endblock %}
+
+
+

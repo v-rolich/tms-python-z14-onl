@@ -10,11 +10,11 @@ from sqlalchemy_utils import database_exists, create_database
 DB_USER = 'postgres'
 DB_PASSWORD = '2332'
 DB_NAME = 'product_base.db'
-DB_ECHO = True
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = f'postgresql://{DB_USER}:{DB_PASSWORD}@localhost/{DB_NAME}'
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
+app.config['SQLALCHEMY_ECHO'] = True
 db = SQLAlchemy(app)
 
 
@@ -51,20 +51,34 @@ def index():
 @app.route('/details/<int:id>', methods=['POST', 'GET'])
 def details(id):
     item = Product.query.filter_by(id=id)
+    return render_template('details.html', info=item)
+
+
+@app.route('/details/<int:id>/update', methods=['POST', 'GET'])
+def update(id):
+    item = Product.query.get(id)
     if request.method == 'POST':
         item.name = request.form['name']
         item.price = request.form['price']
         item.amount = request.form['amount']
         item.comment = request.form['comment']
-
         try:
             db.session.commit()
             return redirect('/')
-
         except ValueError:
             return 'Something wrong'
-    else:
-        return render_template('details.html', info=item)
+
+
+@app.route('/details/<int:id>/delete', methods=['POST', 'GET'])
+def delete(id):
+    item = Product.query.get(id)
+
+    try:
+        db.session.delete(item)
+        db.session.commit()
+        return redirect('/')
+    except ValueError:
+        return 'Something wrong'
 
 
 @app.route('/add product', methods=['POST', 'GET'])

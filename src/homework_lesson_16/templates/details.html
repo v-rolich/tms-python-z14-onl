@@ -5,22 +5,16 @@
 {% endblock %}
 
 {% block body %}
+{%for i in info%}
 <div class="card mb-4 rounded-3 shadow-sm">
-{% for i in info %}
-    <h4 class="card-title pricing-card-title">{{i.name}}</h4>
-    <h4 class="card-title pricing-card-title">Price:{{i.price}}</h4>
-    <h4 class="card-title pricing-card-title">Amount:{{i.amount}}</h4>
-    <h4 class="card-title pricing-card-title">Description:{{i.comment}}</h4>
-    {%endfor%}
+<h4 class="card-title pricing-card-title">{{i.name}}</h4>
+<h4 class="card-title pricing-card-title">Price:{{i.price}}</h4>
+<h4 class="card-title pricing-card-title">Amount:{{i.amount}}</h4>
+<h4 class="card-title pricing-card-title">Description:{{i.comment}}</h4>
 </div>
-<div class="container">
-<h2>Change</h2>
-<form method="post">
-    <input type="text" class="form-control" name="name" id="name" placeholder="Enter product name"><br>
-    <input type="number" class="form-control" name="price" id="price" placeholder="Enter price"><br>
-    <input type="number" class="form-control" name="amount" id="amount" placeholder="Enter amount"><br>
-    <input type="text" class="form-control" name="comment" id="comment" placeholder="Enter comment"><br>
-    <button class="btn btn-success" type="submit">Accept</button>
-</form>
-</div>
+{% endfor %}
+{%for i in info%}
+<a href="/details/{{ i.id }}/update" class="w-300 btn btn-lg btn-outline-primary">Change value</a>
+<a href="/details/{{ i.id }}/delete" class="w-300 btn btn-lg btn-outline-primary">Delete</a>
+{% endfor %}
 {% endblock %}
