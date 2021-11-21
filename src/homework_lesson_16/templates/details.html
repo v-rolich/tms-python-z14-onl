@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Details</title>
+{% endblock %}
+
+{% block body %}
+{%for i in info%}
+<div class="card mb-4 rounded-3 shadow-sm">
+<h4 class="card-title pricing-card-title">{{i.name}}</h4>
+<h4 class="card-title pricing-card-title">Price:{{i.price}}</h4>
+<h4 class="card-title pricing-card-title">Amount:{{i.amount}}</h4>
+<h4 class="card-title pricing-card-title">Description:{{i.comment}}</h4>
+</div>
+{% endfor %}
+{%for i in info%}
+<a href="/details/{{ i.id }}/update" class="w-300 btn btn-lg btn-outline-primary">Change value</a>
+<a href="/details/{{ i.id }}/delete" class="w-300 btn btn-lg btn-outline-primary">Delete</a>
+{% endfor %}
+{% endblock %}
